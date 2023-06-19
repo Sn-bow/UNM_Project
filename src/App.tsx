@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Slick from './unit/common/slick/Slick'
 
 function App() {
+  const list = ["abc", "dve"]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: "100vh" }}>
+      <div>
+        <h3 style={{ fontSize: "80px" }}>추천 목표</h3>
+        <div>
+          <Slick imageList={list} />
+        </div>
+      </div>
+      <div>
+        <h3 style={{ fontSize: "80px" }}>추천 목표</h3>
+        <div>
+          <Slick imageList={list} />
+        </div>
+      </div>
+      <div>
+        <h3 style={{ fontSize: "80px" }}>추천 목표</h3>
+        <div>
+          <Slick imageList={list} />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
